@@ -287,9 +287,9 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-.home__scroll{
-    /* display: none; */
-}
+/* .home__scroll{
+    display: none;
+} */
 
 .home__scroll-button{
     color: var(--first-color);
@@ -596,7 +596,7 @@ img{
 /*==================== SERVICES ====================*/
 .services__container{
     gap: 1.5rem;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .services__content{
@@ -634,7 +634,7 @@ img{
     transform: translateX(.25rem);
 }
 
-.service__modal{
+.services__modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -676,6 +676,7 @@ img{
     position: absolute;
     top: 1rem;
     right: 1rem;
+    font-size: 1.5rem;
     color: var(--first-color);
     cursor: pointer;
 }
@@ -686,7 +687,10 @@ img{
 }
 
 /* Active Modal */
-
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}
 
 /*==================== PORTFOLIO ====================*/
 
