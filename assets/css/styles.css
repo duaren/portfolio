@@ -288,7 +288,7 @@ img{
 }
 
 .home__scroll{
-    display: none;
+    /* display: none; */
 }
 
 .home__scroll-button{
@@ -333,6 +333,13 @@ img{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
+}
+.contact-button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+.download-button:hover .button__icon{
+    transform: translateY(.25rem);
 }
 
 .button--flex{
@@ -421,7 +428,7 @@ img{
 }
 
 .skills__subtitle{
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
     color: var(--text-color-light);  
 }
 
@@ -491,6 +498,9 @@ img{
     width: 80%;
 }
 .skills__sketch{
+    width: 20%;
+}
+.skills__adobe-xd{
     width: 20%;
 }
 .skills__photoshop{
