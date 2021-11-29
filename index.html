@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -127,7 +127,7 @@
                 <span class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/portfolio1.jpg" alt="" class="about__img">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">
@@ -571,12 +571,83 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="portfolio__container container swiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern Website</h3>
+                                <p class="portfolio__description">Website adaptable to all devices, withui components and animated interactions.</p>
+                                <a href="#" class="button button--flex button--smaller portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 2====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">landing page</h3>
+                                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                                <a href="#" class="button button--flex button--smaller portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 3====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Online store</h3>
+                                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                                <a href="#" class="button button--flex button--smaller portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
-
+                <div class="project__bg">
+                    <div class="project__container conatianer grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You have a new project</h2>
+                            <p class="project__description">Contact me and we will bring your ideas to reality.</p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+                        <img src="assets/img/about-removebg-preview.png" alt="" class="prpject__img">
+                    </div>
+                </div>
 
             </section>
 
@@ -603,7 +674,7 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
