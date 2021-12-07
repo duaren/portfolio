@@ -314,6 +314,70 @@ img{
     margin-bottom: var(--mb-0-75);
 }
 
+/* ===== Word fliper Carousel ===== */
+.wordCarousel div {
+    overflow: hidden;
+    position: relative;
+    height: 55px;
+    padding-top: 10px;
+    margin-top: -10px;
+  }
+.wordCarousel div li {
+    color: var(--first-color);
+    font-weight: 800;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.flip2 {
+    -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  
+  .flip3 {
+    -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  
+  .flip4 {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
 .home__description{
     margin-bottom: var(--mb-2);
 }
@@ -1064,7 +1128,13 @@ img{
         text-align: center;
     }
 
+}
 
+@media screen and (min-width: 350px){
+    
+    .testimonial__description{
+        text-align: center;
+    }
 }
 
 /* For medium devices */
@@ -1094,6 +1164,12 @@ img{
         grid-template-columns: .6fr;
         justify-content: center;
     }
+
+    .testimonial__description{
+        text-align: center;
+        margin-bottom: var(--mb-2);
+    }
+
 }
 
 @media  screen and (min-width: 768px) {
@@ -1232,6 +1308,19 @@ img{
         width: 300px;
     }
 
+    .testimonial__data,
+    .testimonial__description{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-bottom: var(--mb-2);
+    }
+    .testimonial__data,
+    .testimonial__header{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1282,7 +1371,12 @@ img{
         right: -3.5rem;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets{
-       bottom: -4.5rem'; 
+       bottom: -4.5rem; 
+    }
+    .testimonial__data,
+    .testimonial__description{
+        width: 70%;
+        margin-bottom: var(--mb-1);
     }
     .contact__form{
         width: 460px;
