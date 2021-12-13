@@ -481,6 +481,11 @@ img{
     color: var(--first-color-alt);
 }
 
+button {
+    border: none;
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
 /*==================== ABOUT ====================*/
 .about__img{
     width: 200px;
