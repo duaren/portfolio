@@ -629,14 +629,14 @@ button {
 .skills__figma{
     width: 80%;
 }
-.skills__sketch{
-    width: 20%;
-}
 .skills__adobe-xd{
     width: 80%;
 }
 .skills__photoshop{
-    width: 40%;
+    width: 60%;
+}
+.skills__wordpress{
+    width: 60%;
 }
 
 .skills__close .skills__list{
