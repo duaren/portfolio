@@ -151,6 +151,34 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true,
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__social`, {delay: 600, origin: 'left'})
+sr.reveal(`.home__img`, {delay: 900})
+sr.reveal(`.home__scroll`, {delay: 1000, origin: 'bottom'})
+sr.reveal(`.about__img`, { origin: 'left'})
+sr.reveal(`.about__data` , {delay: 1000})
+sr.reveal(`.skills__open`)
+sr.reveal(`.skills__close`, {delay: 1000})
+sr.reveal(`.qualification__container`)
+sr.reveal(`.edu`, {delay: 600, origin: 'left'})
+sr.reveal(`.work`, {delay: 600, origin: 'right'})
+sr.reveal(`.services__content`) 
+sr.reveal(`.project__container`)
+sr.reveal(`.contact__information`, {delay: 600, origin: 'left'})
+sr.reveal(`.contact__form`,{delay: 900, origin: 'right'} )
+
+
+
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
