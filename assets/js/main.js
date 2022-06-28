@@ -233,7 +233,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-
+/*==================== CONTACT FORM ====================*/ 
 // Contact form validation 
 
 var form = document.getElementById("contact-form");
@@ -256,3 +256,7 @@ var form = document.getElementById("contact-form");
       });
     }
     form.addEventListener("submit", handleSubmit)
+
+/*==================== DYNAMIC COPYRIGHT ====================*/ 
+var date = new Date().getFullYear();
+document.getElementById("year").innerHTML = date;
