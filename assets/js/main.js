@@ -169,12 +169,12 @@ sr.reveal(`.about__data` , {delay: 1000})
 sr.reveal(`.skills__open`)
 sr.reveal(`.skills__close`, {delay: 1000})
 sr.reveal(`.qualification__container`)
-sr.reveal(`.edu`, {delay: 600, origin: 'left'})
-sr.reveal(`.work`, {delay: 600, origin: 'right'})
+sr.reveal(`.edu`, {delay: 600 })
+sr.reveal(`.work`, {delay: 600 })
 sr.reveal(`.services__content`) 
 sr.reveal(`.project__container`)
 sr.reveal(`.contact__information`, {delay: 600, origin: 'left'})
-sr.reveal(`.contact__form`,{delay: 900, origin: 'right'} )
+sr.reveal(`.contact__form`,{delay: 900} )
 
 
 
