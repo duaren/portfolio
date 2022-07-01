@@ -603,14 +603,14 @@
             </section>
 
             <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most recent work</span>
+            <!-- <section class="portfolio section" id="portfolio"> -->
+                <!-- <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span> -->
 
-                <div class="portfolio__container container swiper">
-                    <div class="swiper-wrapper">
+                <!-- <div class="portfolio__container container swiper"> -->
+                   <!--  <div class="swiper-wrapper"> -->
                         <!--==================== PORTFOLIO 1====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <!-- <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/GoHub.jpg" alt="Gohub" class="portfolio__img">
                         
                             <div class="portfolio__data">
@@ -621,10 +621,10 @@
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!--==================== PORTFOLIO 2====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <!-- <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/pepsi-brand.jpg" alt="" class="portfolio__img">
                         
                             <div class="portfolio__data">
@@ -635,10 +635,10 @@
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!--==================== PORTFOLIO 3====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                       <!--  <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/hands-fairy-deco.jpg" alt="Hands Fairy Deco" class="portfolio__img">
                         
                             <div class="portfolio__data">
@@ -649,20 +649,85 @@
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
 
                     <!-- Add Arrows -->
-                    <div class="swiper-button-next">
+                    <!-- <div class="swiper-button-next">
                         <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
                     </div>
                     <div class="swiper-button-prev">
                         <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
+                    </div> -->
 
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
 
+               <!--  </div> -->
+            <!-- </section> -->
+
+            <!--==================== WORK ====================-->
+            <section class="work section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Work</span>
+                
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter="all">All</span>
+                    <span class="work__item" data-filter=".web">Web</span>
+                    <span class="work__item" data-filter=".wordpress">Wordpress</span>
+                    <span class="work__item" data-filter=".ui">UI</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card mix web">
+                        <img src="assets/img/GoHub.jpg" alt="Gohub" class="work__img">
+
+                        <h3 class="work__title">Web Design</h3>
+
+                        <a href="https://duaren.github.io/10PSD-design-to-HTML-CSS-JS/gohub" class="work__button" target="_blank">
+                            Demo <i class="uil uil-arrow-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix web">
+                        <img src="assets/img/travelly-thumbnail.jpg" alt="Travelly" class="work__img">
+
+                        <h3 class="work__title">Web Design</h3>
+
+                        <a href="https://duaren.github.io/Travelly/" class="work__button" target="_blank">
+                            Demo <i class="uil uil-arrow-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix wordpress">
+                        <img src="assets/img/hands-fairy-deco.jpg" alt="Hands Fairy Deco" class="work__img">
+
+                        <h3 class="work__title">Wordpress</h3>
+
+                        <a href="https://handsfairydeco.art.blog/" class="work__button" target="_blank">
+                            Demo <i class="uil uil-arrow-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix ui">
+                        <img src="assets/img/DashboardOne-thumbnail.jpg" alt="Dashboard One" class="work__img">
+
+                        <h3 class="work__title">UI Design</h3>
+
+                        <a href="https://www.figma.com/file/pHQmidQod9iCouJr1gozOr/dashboard?node-id=0%3A1" class="work__button" target="_blank">
+                            Demo <i class="uil uil-arrow-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix ui">
+                        <img src="assets/img/androidapp-thumbnail.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">UI Design</h3>
+
+                        <a href="https://www.figma.com/file/QDFqdqODiMK2eU3g9AJ69O/Logo?node-id=0%3A1" class="work__button" target="_blank">
+                            Demo <i class="uil uil-arrow-right work__icon"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -899,6 +964,9 @@
 
         <!--==================== SCROLLREFEAL JS ====================-->
         <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--==================== MIXITUP FILTER JS ====================-->
+        <script src="assets/js/mixitup.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
