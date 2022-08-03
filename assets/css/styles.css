@@ -244,7 +244,7 @@ img{
     font-weight: var(--font-medium);
 }
 
-.nav__link:hover{
+.nav__link:hover, .switch-language:hover {
     color: var(--first-color);
 }
 
@@ -259,6 +259,20 @@ img{
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--first-color-alt);
+}
+
+/* Language switch */
+.switch-language{
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-1);
+    color: var(--title-color);
+    cursor: pointer;
+}
+.switch-language img{
+    margin-right: 5px;
 }
 
 /* show menu */
